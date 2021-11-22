@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: rgb(43, 43, 43);
+}
+body a {
+    font-weight: 700;
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.center {
+    text-align: center;
+}
+.padding {
+    padding: 60px 0;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+p {
+    font-size: 14px;
+    text-transform:none;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.f-red
+{
+    color: #ec523f;
+}
+.f-black 
+{
+    color: rgb(22, 22, 22);
+    font-weight: 700;
+}
+.f-green 
+{
+    color: #68cd73;
+}
+.f-blue 
+{
+    color: #3998db;
+}
+
+/* Header */
+
+
+.header-cont 
+{
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    margin: 0px auto;
+}
+.header {
+    background-color: white;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px black;
+    width: 100%;
+}
+
+.header a {
+    color: #ec523f;
+    font-weight: 600;
+}
+
+.logo img, .logo span {
+    vertical-align: middle;
+    padding-right: 16px;
+}
+.logo img {
+    width: 100px;
+}
+.menu a {
+    margin: 0 16px;
+    color: #6b7c93;
+    padding: 28.5px 0;
+}
+.menu a:hover, .menu a:active {
+    border-top: 3px solid #ec523f;
+    color: #ec523f;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* sec1 */
+
+.banner {
+    flex-direction: column;
+}
+.banner .img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+}
+.top-header {
+    position: absolute;
+    top: 0;
+}
+
+/* social icons */
+
+.top-header .fab {
+    background-color: white;
+    color: black;
+    padding: 6px 5px;
+}
+
+.top-header .fab , .gallery .fab {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px 8px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.banner .img .txt {
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+.banner .btn {
+    padding: 15px;
+    background-color: #ec523f;
+    color: white;
+}
+.dots {
+    padding: 20px;
+}
+.dots span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 5px;
+}
+.dots span.active, .banner span:hover {
+    background-color: black;
+}
+
+
+/* sec1 */
+
+.services span {
+    font-size: 40px;
+    color: white;
+    padding: 100px;
+}
+.bgteal {
+    background-color: #5cbd9d;
+}
+.bgcoral {
+    background-color: #e67f31;
+}
+.bgblue {
+    background-color: #3998db;
+}
+.bggreen {
+    background-color: #68cd73;
+}
+
+/* sec2 */
+
+.portfolio img{
+    width: 100%;
+}
+.col-4-1 {
+    flex: 0 1 23%;
+}
+
+/* sec3 */
+
+.team img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* sec4 */
+
+.sec4 .heading h4 {
+    font-style: italic;
+}
+
+.sec4 .heading p {
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* sec4 ----- col1 */
+.sec4 .txt {
+    flex: 0 1 60%;
+}
+
+.sec4 .content {
+    padding: 40px 0;
+    align-self: stretch;
+}
+
+/* sec4 ------- col2 */
+.sec4 .block {
+    flex: 0 1 35%;
+}
+.bar {
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    margin: 15px 0;
+}
+.skills {
+    text-align: left;
+    padding: 10px;
+    color: white;
+    background-color: #ec523f;
+}
+.b70 {
+    width: 70%;
+}
+.b80 {
+    width: 80%;
+}
+.b90 {
+    width: 90%;
+}
+
+
+/* sec5 */
+
+.sec5 p {
+    margin: 0 0 30px 0;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.map {
+    width: 100%;
+    padding: 30px 0;
+}
+
+/* form */
+
+.sec5 aside {
+    flex: 0 1 55%;
+    text-align: left;
+}
+.sec5 .form {
+    flex: 0 1 40%;
+}
+.form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+}
+
+.stretch {
+    height: 120px;
+}
+.form .btn {
+    background-color: #ec523f;
+    color: white;
+    border: none;
+}
+
+aside, .form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+/* footer */
+.top-btn {
+    background-color: #ec523f;
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* gallery page */
+
+
+.gallery aside {
+    background-color: #ec523f;
+    height: 100vh;
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 32px;
+}
+.gallery .logo {
+    width: 50px;
+}
+.gallery aside header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gallery aside header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 32px;
+}
+.gallery aside header a span {
+    margin: 0 20px;
+}
+
+.gallery aside header .btn {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 20px 8px;
+}
+.gallery h4 {
+    text-transform: none;
+    color: white;
+}
+
+.gallery .content {
+    padding: 20px 10px;
+    flex: 70%;
+    height: 100vh;
+    overflow: auto;    
+}
+.gallery .fab {
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.gallery .content .row 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .gallery .content .row .col 
+{
+    flex: 50%;
+    padding: 0 10px;
+}
+  
+.gallery .content .row .col img
+{
+    margin: 10px 0;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.gallery h6 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
