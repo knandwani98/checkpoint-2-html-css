@@ -157,7 +157,7 @@ p {
     color: #6b7c93;
     padding: 28.5px 0;
 }
-.menu a:hover, .menu a:active {
+.menu a:hover, .menu a.active {
     border-top: 3px solid #ec523f;
     color: #ec523f;
 }
