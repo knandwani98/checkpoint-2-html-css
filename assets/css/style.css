@@ -257,6 +257,7 @@ p {
 
 .portfolio img{
     width: 100%;
+    margin-bottom: 26px;
 }
 .col-4-1 {
     flex: 0 1 23%;
@@ -458,3 +459,6 @@ aside, .form {
     text-transform: capitalize;
     padding: 10px 0;
 }
+
+
+
